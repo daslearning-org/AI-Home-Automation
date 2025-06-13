@@ -9,7 +9,7 @@ Let's go step by step.
 
 ### 🦾 Setting up the ESP8266
 1. Below is the scematic connection diagram. Connect your appliances accordingly. You can Checkout my [DIY-Video](https://youtu.be/Xoi3wdvYqV0?si=PjAiNiwiC0Vs7xXj) to get more insight.
-<a href="https://example.com/your-image-full-size-link">
+<a href="https://youtu.be/Xoi3wdvYqV0?si=4HhcSEV_MDXQLTdh">
   <img src="./docs/images/wifiSwitch.jpg" width="600" alt="ESP8266 Connection">
 </a>
 
