@@ -1,0 +1,5 @@
+langchain-ollama
+ollama
+langgraph
+vosk
+gradio

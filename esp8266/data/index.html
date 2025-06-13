@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width", initial-scale=1.0, user-scalable="no">
+  <title>DasLearning | LED Control</title>
+  <style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+    body{margin-top: 50px;} 
+    h1 {color: #444444;margin: 50px auto 30px;} h3 {color: #444444;margin-bottom: 50px;}
+    .button {display: block;width: auto;background-color: #1abc9c;border: none;color: white;padding: 13px 30px;text-decoration: none;font-size: 25px;margin: 0px auto 35px;cursor: pointer;border-radius: 4px;}
+    .button-on {background-color: #5fb58a;}
+    .button-on:active {background-color: #5fb58a;}
+    .button-off {background-color: #c04d6a;}
+    .button-off:active {background-color: #c04d6a;}
+    p {font-size: 14px;color: #888;margin-bottom: 10px;}
+  </style>
+</head>
+<body onload="getStat()">
+  <h1>ESP8266 Web Server</h1>
+  <h3>LED Control UI</h3>
+  <p id="led1Stat">LED1 Status: Checking</p><button id="ledOne" type="button" class="button button-off">WAIT LED1</button>
+  <p id="led2Stat">LED2 Status: Checking</p><button id="ledTwo" type="button" class="button button-on">WAIT LED2</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
