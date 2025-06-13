@@ -9,7 +9,8 @@ import json
 import os
 
 # Global variables
-api_hostname = os.environ.get("HOME_API_BASE", "http://192.168.4.1") # Takes the default AP mode IP
+api_hostname = os.environ.get("HOME_API_BASE", "http://192.168.4.1") # Takes the default AP mode IP of ESP8266
+ollama_base = os.environ.get("OLLAMA_API_BASE", "http://localhost:11434")
 ollama_model = api_hostname = os.environ.get("OLLAMA_MODEL", "llama3.2") # Uses llama3.2 as default if not provided
 
 # Tool definitions
@@ -89,7 +90,7 @@ def change_led_status(led_number: int, led_on: bool) -> str:
     return respMsg
 
 # Define model & tools
-model = ChatOllama(model=ollama_model)
+model = ChatOllama(model=ollama_model, base_url=ollama_base)
 tools = [get_led_status, change_led_status]
 
 # Prompt guidence
