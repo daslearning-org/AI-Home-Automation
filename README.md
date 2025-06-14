@@ -4,7 +4,7 @@ Smart Home with AI: Your private AI Agent using LangGraph, LangChain, Ollama to 
 ## 📽️ Demo
 You can click on the below Image or this [Youtube Link](https://www.youtube.com/watch?v=YZJlYPuJBdM) to see the demo. Please let me know in the comments, how do you feel about this App.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YZJlYPuJBdM?si=HKZDGI5t7qTtNiQi" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YZJlYPuJBdM?si=HKZDGI5t7qTtNiQi" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 🖧 Our Scematic Architecture
 This is the scematic flow [diagram](./docs/images/flowDiagram.jpg) <br>
