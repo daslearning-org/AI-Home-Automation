@@ -11,7 +11,7 @@ import os
 # Global variables
 api_hostname = os.environ.get("HOME_API_BASE", "http://192.168.4.1") # Takes the default AP mode IP of ESP8266
 ollama_base = os.environ.get("OLLAMA_API_BASE", "http://localhost:11434")
-ollama_model = api_hostname = os.environ.get("OLLAMA_MODEL", "llama3.2") # Uses llama3.2 as default if not provided
+ollama_model = os.environ.get("OLLAMA_MODEL", "llama3.2") # Uses llama3.2 as default if not provided
 
 # Tool definitions
 @tool
