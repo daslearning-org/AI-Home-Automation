@@ -4,6 +4,10 @@ Smart Home with AI: Your private AI Agent using LangGraph, LangChain, Ollama to 
 ## 📽️ Demo
 Coming Soon...
 
+## 🖧 Our Scematic Architecture
+This is the scematic flow diagram <br>
+![Flow-Diagram](./docs/animations/aiEsp8266.gif)
+
 ## 🧑‍💻 Quickstart Guide
 Let's go step by step.
 
@@ -36,7 +40,7 @@ You can check the App [directory](./aiAgents/) to get more insights
     # Install the dependencies
     pip install -r requirements.txt # virtual environment is recommended
 
-    # Set the required enviroment variables (use `setx` on windows)
+    # Set the required enviroment variables (use `setx` command on windows)
     export HOME_API_BASE="http://<your-esp8266-ip>" # This is needed for the AI app to connect to ESP8266
     export OLLAMA_API_BASE="http://<your-ollama-ip>:<port>" # Optional: defaults to localhost:11434
     export AUDIO_MODEL="<other-vosk-model>" # Optional: default to `en-in` (Indian English small)
@@ -46,3 +50,6 @@ You can check the App [directory](./aiAgents/) to get more insights
     ```
 
 2. Access the App at `http://localhost:7860` from the same device or `http://<IP>:7860` from another device in the local network. <br>Please note: the `microphone` access would be disabled on other devices as the app is not running on `HTTPS`.
+
+## ✉️ Contact Information
+Please visit our contact page 👉🏽 [Contact Us](https://daslearning.in/contact/)
