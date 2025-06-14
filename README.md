@@ -2,11 +2,14 @@
 Smart Home with AI: Your private AI Agent using LangGraph, LangChain, Ollama to control home appliances which are being controlled via Micro-controllers like ESP32, ESP8266 etc. It is designed to work completely offline &amp; private in nature. Users can interact to the AI with text prompts or voice commands to control the home appliances. This is a prototype which can be improved and modified hugely
 
 ## 📽️ Demo
-Coming Soon...
+You can click on the below Image or this [Youtube Link](https://www.youtube.com/watch?v=YZJlYPuJBdM) to see the demo. Please let me know in the comments, how do you feel about this App.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YZJlYPuJBdM?si=HKZDGI5t7qTtNiQi" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 🖧 Our Scematic Architecture
 This is the scematic flow [diagram](./docs/images/flowDiagram.jpg) <br>
 ![Flow-Diagram](./docs/animations/aiEsp8266.gif)
+
+---
 
 ## 🧑‍💻 Quickstart Guide
 Let's go step by step.
@@ -29,6 +32,15 @@ Let's go step by step.
     * Finally, upload the sketch (program) from IDE & Volla, your ESP8266 is ready.
 
 ### 🤖 Setting up your AI platform
+
+#### 💻 Run Ollama Backend
+1. Install Ollama on your system from the [official website](https://ollama.com/download)
+2. Then Pull the required models
+    ```bash
+    ollama pull llama3.2
+    # Check the models
+    ollama list
+    ```
 
 #### 🐍 Run the `Python` AI App
 You can check the App [directory](./aiAgents/) to get more insights
