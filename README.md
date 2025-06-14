@@ -24,4 +24,25 @@ Let's go step by step.
     * Optionally, you can upload the [data](./esp8266/data/) folder to static memory using any upload tool such as [LittleFS-DataUpload](https://github.com/earlephilhower/arduino-esp8266littlefs-plugin) to use the direct `HTML` based website to control the LEDs & bypass the `AI`.
     * Finally, upload the sketch (program) from IDE & Volla, your ESP8266 is ready.
 
-### 🧠 Setting up your AI platform
+### 🤖 Setting up your AI platform
+
+#### 🐍 Run the `Python` AI App
+You can check the App [directory](./aiAgents/) to get more insights
+
+1. Steps to run the App
+    ```bash
+    cd ./aiAgents/
+
+    # Install the dependencies
+    pip install -r requirements.txt # virtual environment is recommended
+
+    # Set the required enviroment variables (use `setx` on windows)
+    export HOME_API_BASE="http://<your-esp8266-ip>" # This is needed for the AI app to connect to ESP8266
+    export OLLAMA_API_BASE="http://<your-ollama-ip>:<port>" # Optional: defaults to localhost:11434
+    export AUDIO_MODEL="<other-vosk-model>" # Optional: default to `en-in` (Indian English small)
+
+    # Run the APP
+    python app.py
+    ```
+
+2. Access the App at `http://localhost:7860` from the same device or `http://<IP>:7860` from another device in the local network. <br>Please note: the `microphone` access would be disabled on other devices as the app is not running on `HTTPS`.
